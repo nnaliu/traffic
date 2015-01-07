@@ -13,9 +13,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var resetButton: UIButton!
     
     var speed: Double = 0
-    var timePassed: Int = 0
+    var timePassed: Int = 3580
     var locationManager = CLLocationManager()
     let conversionConstant = 2.23694
     let trafficSpeed = 15.0
@@ -58,7 +59,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             var seconds = timePassed - hours*3600 - minutes*60
             
             if (hours > 0) {
-                timeLabel.text = "\(hours) h \(minutes) min"
+                if (minutes == 0) {
+                    if (hours == 1) {
+                        timeLabel.text = "\(hours) hour"
+                    }
+                    else {
+                        timeLabel.text = "\(hours) hours"
+                    }
+                }
+                else {
+                    timeLabel.text = "\(hours) h \(minutes) min"
+                }
                 view.backgroundColor = UIColor(red: 246/255.0, green: 150/255.0, blue: 121/255.0, alpha: 1.0)
             }
             else if (minutes > 0) {
@@ -81,6 +92,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         timeLabel.text = "No data"
         speedLabel.text = "No data"
     }
-
+    
+    @IBAction func resetTime(sender: AnyObject) {
+        timePassed = 0
+        view.backgroundColor = UIColor(red: 196/255.0, green: 237/255.0, blue: 155/255.0, alpha: 1.0)
+    }
+    
 }
 
