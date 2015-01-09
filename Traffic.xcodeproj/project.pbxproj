@@ -14,6 +14,9 @@
 		301F46481A5CA0A90001902E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301F46461A5CA0A90001902E /* LaunchScreen.xib */; };
 		301F46541A5CA0A90001902E /* TrafficTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301F46531A5CA0A90001902E /* TrafficTests.swift */; };
 		301F465E1A5CA7C40001902E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301F465D1A5CA7C40001902E /* CoreLocation.framework */; };
+		3037A6B51A5F58A0007FB6B9 /* TrafficData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3037A6B31A5F58A0007FB6B9 /* TrafficData.xcdatamodeld */; };
+		3037A6B71A5F5B69007FB6B9 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037A6B61A5F5B69007FB6B9 /* ViewController2.swift */; };
+		3037A6B91A5F63E3007FB6B9 /* DayTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037A6B81A5F63E3007FB6B9 /* DayTraffic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		301F46521A5CA0A90001902E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301F46531A5CA0A90001902E /* TrafficTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficTests.swift; sourceTree = "<group>"; };
 		301F465D1A5CA7C40001902E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3037A6B41A5F58A0007FB6B9 /* TrafficData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrafficData.xcdatamodel; sourceTree = "<group>"; };
+		3037A6B61A5F5B69007FB6B9 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		3037A6B81A5F63E3007FB6B9 /* DayTraffic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTraffic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				301F463D1A5CA0A90001902E /* AppDelegate.swift */,
+				3037A6B31A5F58A0007FB6B9 /* TrafficData.xcdatamodeld */,
 				301F463F1A5CA0A90001902E /* ViewController.swift */,
+				3037A6B61A5F5B69007FB6B9 /* ViewController2.swift */,
+				3037A6B81A5F63E3007FB6B9 /* DayTraffic.swift */,
 				301F46411A5CA0A90001902E /* Main.storyboard */,
 				301F46441A5CA0A90001902E /* Images.xcassets */,
 				301F46461A5CA0A90001902E /* LaunchScreen.xib */,
@@ -222,6 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				301F46401A5CA0A90001902E /* ViewController.swift in Sources */,
+				3037A6B71A5F5B69007FB6B9 /* ViewController2.swift in Sources */,
+				3037A6B51A5F58A0007FB6B9 /* TrafficData.xcdatamodeld in Sources */,
+				3037A6B91A5F63E3007FB6B9 /* DayTraffic.swift in Sources */,
 				301F463E1A5CA0A90001902E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +438,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3037A6B31A5F58A0007FB6B9 /* TrafficData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3037A6B41A5F58A0007FB6B9 /* TrafficData.xcdatamodel */,
+			);
+			currentVersion = 3037A6B41A5F58A0007FB6B9 /* TrafficData.xcdatamodel */;
+			path = TrafficData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 301F46301A5CA0A90001902E /* Project object */;
 }
